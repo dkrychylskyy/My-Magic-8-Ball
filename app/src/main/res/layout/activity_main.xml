@@ -4,6 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1abc9c"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
     tools:context="com.example.dimitrykrychylskyy.my_magic_8_ball_android.MainActivity">
 
+    <TextView
+        android:id="@+id/text_make_decisions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/make_decisions"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
 </RelativeLayout>
