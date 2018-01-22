@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My-Magic-8-Ball-Android</string>
+    <string name="make_decisions">Make decisions every days easier !</string>
+    <string name="text_ask">Ask</string>
 </resources>
