@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button askButton;
         askButton = findViewById(R.id.button_ask);
 
-        final ImageView mainImage = findViewById(R.id.image_start);
+        final ImageView ballImage = findViewById(R.id.image_start);
 
         final int[] reponcesImages = {
                 R.drawable.ball2,
@@ -27,15 +27,27 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.ball5,
         };
 
-        askButton.setOnClickListener(new View.OnClickListener() {
+        View.OnClickListener askButtonClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Random randomNumberGenetator = new Random();
                 int number = randomNumberGenetator.nextInt(4);
 
-                mainImage.setImageResource(reponcesImages[number]);
+                ballImage.setImageResource(reponcesImages[number]);
             }
-        });
+        };
+
+        askButton.setOnClickListener(askButtonClickListener );
+
+       /* askButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random randomNumberGenetator = new Random();
+                int number = randomNumberGenetator.nextInt(4);
+
+                ballImage.setImageResource(reponcesImages[number]);
+            }
+        });*/
 
     }
 }
